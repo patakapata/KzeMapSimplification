@@ -1,0 +1,1 @@
+data merge storage kms:attenuate_motion {Strength: 0.95d}

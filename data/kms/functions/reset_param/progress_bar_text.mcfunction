@@ -1,0 +1,1 @@
+data merge storage kms:progress_bar_text {InCompleteChar: '{"color":"red","text":"█"}', CompletedChar: '{"color":"green","text":"█"}', Percentage: 0, Length: 10, AutoResolve: false, Result: [], ResolvedResult: ""}

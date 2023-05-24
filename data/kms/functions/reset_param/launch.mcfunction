@@ -1,0 +1,1 @@
+data merge storage kms:launch {Speed: 1.0d, Offset: [0.0d, 0.0d, 0.0d], Replace: true}

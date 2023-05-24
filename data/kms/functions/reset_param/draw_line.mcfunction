@@ -1,0 +1,1 @@
+data merge storage kms:draw_line {Start: [0.0d, 0.0d, 0.0d], End: [0.0d, 0.0d, 0.0d], Steps: 5, EnableEdge: true, Tags: [], SelfDistance: 10.0d}

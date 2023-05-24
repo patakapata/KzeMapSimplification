@@ -1,0 +1,1 @@
+data merge storage kms:min_and_max {A: [0.0d, 0.0d, 0.0d], B: [0.0d, 0.0d, 0.0d], Result: {Min: [0.0d, 0.0d, 0.0d], Max: [0.0d, 0.0d, 0.0d]}}

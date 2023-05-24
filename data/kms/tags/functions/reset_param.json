@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "kms:reset_param/angle_lerp",
+    "kms:reset_param/apply_time_template",
+    "kms:reset_param/draw_box",
+    "kms:reset_param/draw_circle",
+    "kms:reset_param/draw_free_axis_circle",
+    "kms:reset_param/draw_line",
+    "kms:reset_param/launch",
+    "kms:reset_param/min_and_max",
+    "kms:reset_param/parse_tick",
+    "kms:reset_param/progress_bar_text",
+    "kms:reset_param/random_number",
+    "kms:reset_param/resolve_text",
+    "kms:reset_param/spread_region",
+    "kms:reset_param/attenuate_motion",
+    "kms:reset_param/distance",
+    "kms:reset_param/rotation_inversed",
+    "kms:reset_param/sqrt"
+  ]
+}

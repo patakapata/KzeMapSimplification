@@ -1,0 +1,3 @@
+data modify storage kms:progress_bar_text Result append from storage kms:progress_bar_text CompletedChar
+scoreboard players remove ProgressBarText.CompletedSections KzeMapSimplification 1
+execute if score ProgressBarText.CompletedSections KzeMapSimplification matches 1.. run function kms:internal/progress_bar_text_completed_loop

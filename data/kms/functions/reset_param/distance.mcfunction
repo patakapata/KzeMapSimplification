@@ -1,0 +1,1 @@
+data merge storage kms:distance {A: [0.0d, 0.0d, 0.0d], B: [0.0d, 0.0d, 0.0d], Result: 0.0d}

@@ -1,0 +1,1 @@
+data merge storage kms:draw_box {Min: [0.0d, 0.0d, 0.0d], Max: [0.0d, 0.0d, 0.0d], Steps: [1, 1, 1], EnableEdge: true, Tags: []}

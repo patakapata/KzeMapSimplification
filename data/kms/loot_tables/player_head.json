@@ -1,0 +1,22 @@
+{
+  "type": "command",
+  "functions": [
+    {
+      "function": "fill_player_head",
+      "entity": "this"
+    }
+  ],
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "quality": 0
+        }
+      ]
+    }
+  ]
+}

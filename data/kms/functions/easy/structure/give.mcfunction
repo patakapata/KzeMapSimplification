@@ -1,0 +1,3 @@
+give @s item_frame{EntityTag: {Invisible: 1b, Glowing: 1b, ItemDropChance: 0f, Fixed: 1b, Item: {id: "minecraft:structure_block", Count: 1b}, Tags: ["kms_easy_structure", "kms_easy_structure_start"]}, display: {Name: '{"italic": false,"text": "Start"}'}}
+give @s item_frame{EntityTag: {Invisible: 1b, Glowing: 1b, ItemDropChance: 0f, Fixed: 1b, Item: {id: "minecraft:structure_block", Count: 1b}, Tags: ["kms_easy_structure", "kms_easy_structure_end"]}, display: {Name: '{"italic": false,"text": "End"}'}}
+give @s item_frame{EntityTag: {Invisible: 1b, Glowing: 1b, ItemDropChance: 0f, Fixed: 1b, Item: {id: "minecraft:structure_block", Count: 1b}, Tags: ["kms_easy_structure", "kms_easy_structure_place"]}, display: {Name: '{"italic": false,"text": "Place"}'}}
