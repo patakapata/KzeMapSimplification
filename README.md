@@ -54,11 +54,11 @@ flowchart LR;
 
 関数についての説明
 
-既定値
+ストレージの既定値
+
+`関数用のストレージ名`
 
 ```json
-関数用のストレージ名
-
 {
   値の名前: 既定値,
   オブジェクトの名前: {
@@ -86,11 +86,11 @@ flowchart LR;
 
 実行者のエンティティの名前を特定の形式で`ParseTick`の結果を表示するものに変更する
 
-既定値
+ストレージの既定値
+
+`kms:apply_time_template`
 
 ```json
-kms:apply_time_template
-
 {
   UseCustomTemplate: false,
   CustomTemplate: '["Custom Template"]'
@@ -105,11 +105,11 @@ kms:apply_time_template
 
 指定した2つの座標間に指定した間隔でマーカーを配置する
 
-既定値
+ストレージの既定値
+
+`kms:draw_line`
 
 ```json
-kms:draw_line
-
 {
   Start: [0.0, 0.0, 0.0],
   End: [0.0, 0.0, 0.0],
@@ -130,11 +130,11 @@ kms:draw_line
 
 指定した位置とサイズ、間隔でマーカーを箱の枠状に配置する
 
-既定値
+ストレージの既定値
+
+`kms:draw_box`
 
 ```json
-kms:draw_box
-
 {
   Min: [0.0, 0.0, 0.0],
   Max: [0.0, 0.0, 0.0],
@@ -152,11 +152,11 @@ kms:draw_box
 
 実行したエンティティを向いている方向に発射する
 
-既定値
+ストレージの既定値
+
+`kms:launch`
 
 ```json
-kms:launch
-
 {
   Speed: 1.0,
   Offset: [0.0, 0.0, 0.0],
@@ -172,11 +172,11 @@ kms:launch
 
 指定された座標を中心に、円状にマーカーを配置する
 
-既定値
+ストレージの既定値
+
+`kms:draw_circle`
 
 ```json
-kms:draw_circle
-
 {
   Radius: 1,
   Steps: 5,
@@ -196,11 +196,11 @@ kms:draw_circle
 
 実行された座標と向きを元に、指定された大きさと間隔で円状にマーカーを配置する
 
-既定値
+ストレージの既定値
+
+`kms:draw_free_axis_circle`
 
 ```json
-kms:draw_free_axis_circle
-
 {
   Radius: 1.0,
   Steps: 5,
@@ -221,11 +221,11 @@ kms:draw_free_axis_circle
 なお `kms:spread_region_self` は `SpreadRegion.Count` を無視し、  
 実行者のエンティティの位置を変える
 
-既定値
+ストレージの既定値
+
+`kms:spread_region`
 
 ```json
-kms:spread_region
-
 {
   Count: 1,
   Start: [0.0d, 0.0d, 0.0d],
@@ -248,11 +248,11 @@ kms:spread_region
 渡された角度を目標角度へ向けて線形補完する  
 なおこの関数では角度を度数法として扱う
 
-既定値
+ストレージの既定値
+
+`kms:angle_lerp`
 
 ```json
-kms:angle_lerp
-
 {
   Source: 0f,
   Target: 0f,
@@ -269,11 +269,11 @@ kms:angle_lerp
 
 0から指定した数より1小さい数の間の乱数を返す
 
-既定値
+ストレージの既定値
+
+`kms:random_number`
 
 ```json
-kms:random_number
-
 {
   Max: 100,
   Result: 0
@@ -288,11 +288,11 @@ kms:random_number
 
 渡された値をそれぞれ比較し、大きいものと小さいものに分ける
 
-既定値
+ストレージの既定値
+
+`kms:min_and_max`
 
 ```json
-kms:min_and_max
-
 {
   A: [0.0d, 0.0d, 0.0d],
   B: [0.0d, 0.0d, 0.0d],
@@ -311,11 +311,11 @@ kms:min_and_max
 
 Tickを秒や分などの他の単位に変換する
 
-既定値
+ストレージの既定値
+
+`kms:parse_tick`
 
 ```json
-kms:parse_tick
-
 {
   Source: 0,
   DecompositionTarget: 0,
@@ -339,9 +339,11 @@ kms:parse_tick
 
 入力されたRaw Jsonテキストの値を確定させる
 
-```json
-kms:resolve_text
+ストレージの既定値
 
+`kms:resolve_text`
+
+```json
 {
   Source: "",
   Result: "",
@@ -358,11 +360,11 @@ kms:resolve_text
 
 数値をプログレスバーの形式に変換する
 
-既定値
+ストレージの既定値
+
+`kms:progress_bar_text`
 
 ```json
-kms:progress_bar_text
-
 {
   InCompleteChar: '{"color":"red","text":"█"}',
   CompletedChar: '{"color":"green","text":"█"}',
