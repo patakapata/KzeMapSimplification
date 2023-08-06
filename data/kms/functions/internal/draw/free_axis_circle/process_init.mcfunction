@@ -1,3 +1,5 @@
+data merge entity @s {Tags: ["kms", "kms_draw_free_axis_circle", "kms_draw_free_axis_circle_init"]}
+
 execute store result score DrawFreeAxisCircle.OrbitX KzeMapSimplification run data get entity @s Pos[0] 100
 scoreboard players operation DrawFreeAxisCircle.OrbitX KzeMapSimplification -= DrawFreeAxisCircle.CenterX KzeMapSimplification
 scoreboard players operation DrawFreeAxisCircle.OrbitX KzeMapSimplification *= DrawFreeAxisCircle.Radius KzeMapSimplification
@@ -20,4 +22,3 @@ scoreboard players operation DrawFreeAxisCircle.OrbitZ KzeMapSimplification += D
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get DrawFreeAxisCircle.OrbitZ KzeMapSimplification
 
 execute if score DrawFreeAxisCircle.Tags KzeMapSimplification matches 1.. run data modify entity @s Tags append from storage kms:draw_free_axis_circle Tags[]
-tag @s remove kms_draw_free_axis_circle_init

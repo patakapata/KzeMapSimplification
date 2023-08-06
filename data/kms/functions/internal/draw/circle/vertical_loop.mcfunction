@@ -3,6 +3,7 @@ execute if score DrawCircle.Tags KzeMapSimplification matches 1.. as @e[tag=kms_
 execute as @e[tag=kms_draw_circle_init] run function kms:internal/draw/circle/multiply_radius
 scoreboard players add DrawCircle.CurrentStep KzeMapSimplification 1
 execute rotated as @s as @e[tag=kms_draw_circle_init] positioned as @s run teleport @s ~ ~ ~ ~ ~
+execute as @e[tag=kms_draw_circle_init] store result entity @s Rotation[1] float 0.01 run scoreboard players get DrawCircle.$ KzeMapSimplification
 scoreboard players operation DrawCircle.$ KzeMapSimplification = DrawCircle.AnglePart KzeMapSimplification
 scoreboard players operation DrawCircle.$ KzeMapSimplification *= DrawCircle.CurrentStep KzeMapSimplification
 execute store result entity @s Rotation[1] float 0.01 run scoreboard players get DrawCircle.$ KzeMapSimplification

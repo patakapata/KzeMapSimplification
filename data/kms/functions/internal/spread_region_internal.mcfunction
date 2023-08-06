@@ -1,3 +1,5 @@
+data merge entity @s {Tags: ["kms_spread_region"]}
+
 execute if score SpreadRegion.Tags KzeMapSimplification matches 1.. run data modify entity @s Tags append from storage kms:spread_region Tags[]
 
 execute store result storage kms:random_number Max int 1 run scoreboard players get SpreadRegion.DiffX KzeMapSimplification

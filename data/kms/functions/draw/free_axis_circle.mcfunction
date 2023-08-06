@@ -1,8 +1,7 @@
 # 拾ってきたやつ
 
-summon marker ~ ~ ~ {Tags: ["kms_draw_free_axis_circle", "kms_draw_free_axis_circle_temp", "kms_draw_free_axis_circle_center"]}
+execute summon marker run function kms:internal/draw/free_axis_circle/copy_coordinate
 summon marker ~ ~ ~ {Tags: ["kms_draw_free_axis_circle", "kms_draw_free_axis_circle_temp", "kms_draw_free_axis_circle_orbit"]}
-execute as @e[limit=1,tag=kms_draw_free_axis_circle_center] run function kms:internal/draw/free_axis_circle/copy_coordinate
 
 scoreboard players set DrawFreeAxisCircle.CurrentStep KzeMapSimplification 0
 scoreboard players set DrawFreeAxisCircle.AnglePart KzeMapSimplification 36000
